@@ -529,3 +529,6 @@ a{color:inherit}
 }
 
 .rsvp__lead,.gifts__text,.story__intro,.footer__thanks,.invite .eyebrow,.joyful,.toast-text p{text-wrap:balance}
+
+.footer__photo{width:min(210px,58%);margin:6px auto 26px;padding:6px;border:1px solid var(--gold);border-radius:999px 999px 10px 10px;background:linear-gradient(160deg,rgba(232,208,138,.35),rgba(201,162,75,.08));box-shadow:0 18px 36px rgba(0,0,0,.4)}
+.footer__photo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 35%;border-radius:999px 999px 6px 6px}

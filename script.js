@@ -85,23 +85,32 @@ const CONFIG = {
         title: "The proposal",
         date: "Add the date or year",
         text: "Share how the question was asked: where you were, what was said, and how it felt.",
-        photo: { src: "assets/gallery-couple-2-sm.webp", w: 640, h: 427, alt: "Elizabeth and Chukwuemeka holding hands, silhouetted against the sky" }
+        photo: { src: "assets/trad-5-sm.webp", w: 480, h: 640, alt: "Elizabeth resting her hand on Chukwuemeka's shoulder as he smiles down at her, her ring showing" }
       },
       {
         title: "The yes",
         date: "Add the date or year",
         text: "And she said yes! Add a line about the joy, the families, and the journey to this day.",
-        photo: { src: "assets/gallery-bride-2-sm.webp", w: 560, h: 840, alt: "Elizabeth glancing back over her shoulder with a bright smile, beach sunset behind her" }
+        photo: { src: "assets/trad-7-sm.webp", w: 480, h: 640, alt: "Chukwuemeka and Elizabeth in a warm embrace in traditional attire" }
       }
     ]
   },
 
   // Gallery: src = full size (lightbox), thumb = grid image. tw/th = thumb size, w/h = full size.
   gallery: [
-    { src: "assets/gallery-bride-1.webp",   thumb: "assets/gallery-bride-1-sm.webp",   tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth smiling at the camera on the beach at sunset, in a white pleated dress" },
-    { src: "assets/gallery-couple-1.webp",  thumb: "assets/gallery-couple-1-sm.webp",  tw: 640, th: 427, w: 1400, h: 933,  alt: "Elizabeth and Chukwuemeka laughing together at a phone on the beach at dusk" },
-    { src: "assets/gallery-bride-2.webp",   thumb: "assets/gallery-bride-2-sm.webp",   tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth looking back over her shoulder at sunset, long waves of hair in the sea breeze" },
-    { src: "assets/gallery-couple-2.webp",  thumb: "assets/gallery-couple-2-sm.webp",  tw: 640, th: 427, w: 1400, h: 933,  alt: "Elizabeth and Chukwuemeka holding hands, silhouetted against a lilac sky" }
+    { src: "assets/trad-7.webp", thumb: "assets/trad-7-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Chukwuemeka and Elizabeth in a warm embrace in traditional attire, smiling at each other among green leaves" },
+    { src: "assets/trad-2.webp", thumb: "assets/trad-2-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth laughing with joy, in a burgundy off-shoulder dress with coral beads" },
+    { src: "assets/trad-5.webp", thumb: "assets/trad-5-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth resting her hand on Chukwuemeka's shoulder as he smiles down at her, he in white with a red cap and coral beads" },
+    { src: "assets/gallery-bride-1.webp", thumb: "assets/gallery-bride-1-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth smiling at the camera on the beach at sunset, in a white pleated dress" },
+    { src: "assets/trad-9.webp", thumb: "assets/trad-9-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka sharing a smile, she holding a black feather fan, he in white with coral beads" },
+    { src: "assets/trad-4.webp", thumb: "assets/trad-4-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Chukwuemeka standing tall in white attire and a red cap, holding a gold-topped walking cane" },
+    { src: "assets/gallery-couple-2.webp", thumb: "assets/gallery-couple-2-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Elizabeth and Chukwuemeka holding hands, silhouetted against a lilac sky" },
+    { src: "assets/trad-1.webp", thumb: "assets/trad-1-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth glancing back over her shoulder in a black and gold embroidered gown and black head tie" },
+    { src: "assets/trad-3.webp", thumb: "assets/trad-3-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka close together, she in burgundy with coral beads and he in white with a red cap" },
+    { src: "assets/gallery-couple-1.webp", thumb: "assets/gallery-couple-1-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Elizabeth and Chukwuemeka laughing together at a phone on the beach at dusk" },
+    { src: "assets/trad-6.webp", thumb: "assets/trad-6-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth smiling warmly in a black and gold gown with a black feather fan and a black head tie" },
+    { src: "assets/trad-8.webp", thumb: "assets/trad-8-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka gazing at each other, her hand resting on his shoulder with her ring showing" },
+    { src: "assets/gallery-bride-2.webp", thumb: "assets/gallery-bride-2-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth looking back over her shoulder at sunset, long waves of hair in the sea breeze" }
   ],
 
   toast: {

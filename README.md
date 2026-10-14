@@ -64,6 +64,7 @@ Everything is in `assets/` and referenced from `CONFIG` (`story.items[].photo`, 
   To convert new photos: `cwebp -q 75 -resize 1400 0 photo.jpg -o gallery-x.webp` (or squoosh.app).
 * `corner-florals*.webp` and `silk-drape*.webp` were cut out of your invitation card (transparent background).
   If you have the original transparent PNGs from your designer, drop them in with the same names for sharper edges.
+* `trad-1.webp` to `trad-9.webp` (+ `-sm` thumbnails) are the traditional-attire photos. They are in the gallery, `trad-5`/`trad-7` are in Our Story, and `trad-9` is in the footer.
 * `invitation-card.webp` is your printed card; it is the card that slides out of the envelope.
 
 ---
