@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160">
+  <defs>
+    <g id="ros">
+      <circle r="3.6"/>
+      <path d="M0-15C4.5-9.5 4.5-4.5 0 0C-4.5-4.5-4.5-9.5 0-15Z"/>
+      <path d="M0-15C4.5-9.5 4.5-4.5 0 0C-4.5-4.5-4.5-9.5 0-15Z" transform="rotate(90)"/>
+      <path d="M0-15C4.5-9.5 4.5-4.5 0 0C-4.5-4.5-4.5-9.5 0-15Z" transform="rotate(180)"/>
+      <path d="M0-15C4.5-9.5 4.5-4.5 0 0C-4.5-4.5-4.5-9.5 0-15Z" transform="rotate(270)"/>
+    </g>
+    <g id="orn">
+      <path d="M60 30C47 46 44 64 60 84C76 64 73 46 60 30Z"/>
+      <path d="M60 84C38 82 26 66 28 50C44 52 55 64 60 84Z"/>
+      <path d="M60 84C82 82 94 66 92 50C76 52 65 64 60 84Z"/>
+      <path d="M60 84C50 100 38 108 24 104C30 92 46 88 60 84Z"/>
+      <path d="M60 84C70 100 82 108 96 104C90 92 74 88 60 84Z"/>
+      <path d="M60 100L67 114L60 128L53 114Z"/>
+      <circle cx="60" cy="20" r="3"/>
+      <circle cx="40" cy="29" r="2"/>
+      <circle cx="80" cy="29" r="2"/>
+      <circle cx="60" cy="140" r="2.4"/>
+      <use href="#ros" x="0" y="0"/>
+      <use href="#ros" x="120" y="0"/>
+      <use href="#ros" x="0" y="160"/>
+      <use href="#ros" x="120" y="160"/>
+    </g>
+    <path id="trellis" fill="none" d="M60 0C80 20 90 40 120 80C90 120 80 140 60 160C40 140 30 120 0 80C30 40 40 20 60 0Z"/>
+  </defs>
+  <!-- pressed / embossed look: dark shadow offset down-right, light edge up-left -->
+  <use href="#orn" fill="#12030f" opacity=".32" transform="translate(1.4 1.6)"/>
+  <use href="#trellis" stroke="#12030f" stroke-opacity=".30" stroke-width="1.6" transform="translate(1.2 1.4)"/>
+  <use href="#orn" fill="#ffffff" opacity=".075"/>
+  <use href="#trellis" stroke="#ffffff" stroke-opacity=".11" stroke-width="1"/>
+</svg>
