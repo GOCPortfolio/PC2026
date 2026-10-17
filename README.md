@@ -89,7 +89,7 @@ Those two buttons always work: **RSVP on WhatsApp** opens a chat to 08137679556 
 
 ## 4. Link preview on WhatsApp
 
-`index.html` has Open Graph and Twitter tags. The preview image is `assets/og-image.jpg` (the sealed envelope, 1200×630).
+`index.html` has Open Graph and Twitter tags. The preview image is `assets/og-image-2.jpg` (the sealed envelope, 1200×630).
 
 **Important:** WhatsApp needs full web addresses. After you know your final domain, search `index.html` for
 `https://pc2026.com` and replace it with your real address (there are 4 places: canonical, `og:url`, the `og:image` and the `twitter:image`).
