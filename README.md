@@ -1,4 +1,4 @@
-# Elizabeth & Chukwuemeka · #PC2026 — Wedding Invitation
+# Pureheart & Chukwuemeka · #PC2026 — Wedding Invitation
 
 A mobile-first, animated wedding invitation (plain HTML, CSS and JavaScript, no build step, no libraries).
 Guests open the WhatsApp link, tap the wax seal, and the envelope opens into the invitation.
@@ -26,9 +26,7 @@ footer text and music path. Nothing below the CONFIG block needs touching.
 
 | What | Where in `CONFIG` |
 |---|---|
-| Our Story text + dates | `story.intro`, `story.items[]` |
-| Bank name, account name, account number | `gifts.accounts[]` |
-| Contact person name/number | `contact` |
+| Contact person name | `contact.name` |
 | Parking & accommodation answers | `faq[]` |
 | RSVP Google Sheet link | `rsvp.endpoint` (section 3) |
 | Music | replace `assets/music.mp3` (section 5) |
@@ -53,6 +51,10 @@ For testing, add `?nointro` to skip the envelope.
 
 ---
 
+**Screen sizes:** phones get the single-column invitation; from 900px wide (tablets in landscape, laptops, desktops) the layout opens up: full-window envelope, photo-and-names hero, two-column venues, three-column story, wider gallery. All of it lives in the last block of `styles.css`.
+
+---
+
 ## 2. Photos
 
 Everything is in `assets/` and referenced from `CONFIG` (`story.items[].photo`, `gallery[]`) and `index.html` (hero).
@@ -65,7 +67,10 @@ Everything is in `assets/` and referenced from `CONFIG` (`story.items[].photo`, 
 * `corner-florals*.webp` and `silk-drape*.webp` were cut out of your invitation card (transparent background).
   If you have the original transparent PNGs from your designer, drop them in with the same names for sharper edges.
 * `trad-1.webp` to `trad-9.webp` (+ `-sm` thumbnails) are the traditional-attire photos. They are in the gallery, `trad-5`/`trad-7` are in Our Story, and `trad-9` is in the footer.
-* `invitation-card.webp` is your printed card; it is the card that slides out of the envelope.
+* `envelope-card.webp` is the photo that slides out of the envelope (a crop of `p-heart`). Swap it for any 6:7 photo of your choice.
+* `p-*.webp` (+ `-sm`) are the newer couple photos in the gallery; `engagement.webp` is the engagement picture in Our Story.
+
+**Other things in `CONFIG`:** `fatherOfDay` (Father of the Day), `vendors.list[]` (the vendors section), `story.closing` (the closing line), `gifts.accounts[]` (bank details), `rsvp.whatsappNumber` (WhatsApp chat) and `rsvp.tel` (Call to RSVP).
 
 ---
 
@@ -78,7 +83,7 @@ Everything is in `assets/` and referenced from `CONFIG` (`story.items[].photo`, 
 5. Open your live site, send a test RSVP, and a row appears in the **RSVPs** tab.
 
 Until the URL is set, the form politely tells guests to use the WhatsApp or Call buttons instead.
-Those two buttons always work: **RSVP on WhatsApp** opens a chat to 08165178188 with a ready message, and **Call to RSVP** dials it.
+Those two buttons always work: **RSVP on WhatsApp** opens a chat to 08137679556 with a ready message, and **Call to RSVP** dials it.
 
 ---
 
@@ -95,8 +100,8 @@ If you ever change the image or title and WhatsApp still shows the old preview, 
 
 ## 5. Music
 
-Replace `assets/music.mp3` with your soft instrumental. The file in there now is only a short, generated placeholder.
-Tips: use a licensed or royalty-free track, export as MP3 at 64–96 kbps mono/stereo (aim for under 1.5 MB), and loop-friendly if possible.
+Replace `assets/music.mp3` with your song (for example *A Thousand Years* by Christina Perri, or an instrumental version). The file in there now is only a short, generated placeholder; I cannot supply a copyrighted song. Compress it first: `ffmpeg -i song.mp3 -b:a 80k -ac 2 -t 150 music.mp3` (this keeps the first 2.5 minutes, about 1.5 MB). Using a commercial song publicly can be flagged by hosts or platforms, so a licensed or royalty-free instrumental cover is the safest choice.
+Tips: export as MP3 at 64–96 kbps mono/stereo (aim for under 1.5 MB), and loop-friendly if possible.
 Music starts when the guest taps the seal (phones only allow audio after a tap), fades in, and the speaker button (top right)
 mutes or unmutes it. The choice is remembered. Change the volume in `CONFIG.music.volume`.
 

@@ -1,5 +1,5 @@
 /* =====================================================================
-   Elizabeth & Chukwuemeka · #PC2026 — wedding invitation
+   Pureheart & Chukwuemeka · #PC2026 — wedding invitation
    ---------------------------------------------------------------------
    1) EDIT EVERYTHING HERE  → the CONFIG object below.
    2) The app code underneath should not need changes.
@@ -14,7 +14,7 @@ const CONFIG = {
       title: "Miss",
       given: "Elizabeth Pureheart",       // shown in plum capitals
       surname: "Ukoha",                    // shown in gold script
-      firstName: "Elizabeth",
+      firstName: "Pureheart",
       parentsLabel: "Daughter of",
       parents: "Late Mr G. Ukoha Joshua & Nkechinyere Joshua"
     },
@@ -31,7 +31,7 @@ const CONFIG = {
   event: {
     dateISO: "2026-11-22T10:00:00+01:00",  // Africa/Lagos (WAT, UTC+1) — drives countdown + calendar
     durationHours: 4,                        // length of the calendar entry
-    title: "Wedding of Elizabeth & Chukwuemeka (#PC2026)",
+    title: "Wedding of Pureheart & Chukwuemeka (#PC2026)",
     dateLabel: "Sunday, 22nd November 2026",
     weekday: "Sunday",
     day: "22nd",
@@ -46,7 +46,7 @@ const CONFIG = {
       name: "Assemblies of God Church",
       sub: "(Favor Family)",
       address: ["3 Onikoyi Street, off Cele Aguda", "Surulere, Lagos"],
-      mapQuery: "Assemblies of God Church (Favor Family), 3 Onikoyi Street, off Cele Aguda, Surulere, Lagos",
+      mapQuery: "3 Onikoyi St, Surulere, Lagos 101241, Lagos",
       mapsUrl: "",         // optional: paste an exact Google Maps share link to override the search link
       directionsUrl: ""    // optional: override the directions link
     },
@@ -70,47 +70,54 @@ const CONFIG = {
     { name: "Onion",    hex: "#C98A9B" }
   ],
 
-  // ---- PLACEHOLDER STORY: replace the text (and photos) with your own ----
   story: {
     heading: "Our Story",
-    intro: "A few warm lines about your journey go here: how you met, what you love about each other, and what this day means to you.",
+    intro: "Our story didn't start with anything magical. It started with a simple hello on Facebook.",
     items: [
       {
-        title: "How we met",
-        date: "Add the date or year",
-        text: "Tell your guests where and when you first met: the place, the moment, the first smile.",
-        photo: { src: "assets/story-1.webp", w: 1000, h: 667, alt: "Elizabeth and Chukwuemeka laughing together at a phone on the beach at dusk" }
+        title: "A simple hello",
+        date: "Where it began",
+        text: "Just a conversation between two people who had no idea where it would lead.",
+        photo: { src: "assets/story-1.webp", w: 1000, h: 667, alt: "Pureheart and Chukwuemeka laughing together at a phone on the beach at dusk" }
       },
       {
-        title: "The proposal",
-        date: "Add the date or year",
-        text: "Share how the question was asked: where you were, what was said, and how it felt.",
-        photo: { src: "assets/trad-5-sm.webp", w: 480, h: 640, alt: "Elizabeth resting her hand on Chukwuemeka's shoulder as he smiles down at her, her ring showing" }
+        title: "Miles apart",
+        date: "The distance",
+        text: "We built something through calls, chats and little moments shared from far away. It wasn't perfect, but somehow it felt right. There was peace in it. I didn't have to chase it or wonder where I stood.",
+        photo: { src: "assets/trad-5-sm.webp", w: 480, h: 640, alt: "Pureheart resting her hand on Chukwuemeka's shoulder as he smiles down at her, her ring showing" }
       },
       {
-        title: "The yes",
-        date: "Add the date or year",
-        text: "And she said yes! Add a line about the joy, the families, and the journey to this day.",
-        photo: { src: "assets/trad-7-sm.webp", w: 480, h: 640, alt: "Chukwuemeka and Elizabeth in a warm embrace in traditional attire" }
+        title: "Here we are",
+        date: "The engagement",
+        text: "The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife.",
+        photo: { src: "assets/engagement.webp", w: 640, h: 854, alt: "Pureheart and Chukwuemeka on the day of their engagement" }
       }
-    ]
+    ],
+    closing: "I wasn't just starting a conversation. I was unknowingly saying hello to my future."
   },
 
   // Gallery: src = full size (lightbox), thumb = grid image. tw/th = thumb size, w/h = full size.
   gallery: [
-    { src: "assets/trad-7.webp", thumb: "assets/trad-7-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Chukwuemeka and Elizabeth in a warm embrace in traditional attire, smiling at each other among green leaves" },
-    { src: "assets/trad-2.webp", thumb: "assets/trad-2-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth laughing with joy, in a burgundy off-shoulder dress with coral beads" },
-    { src: "assets/trad-5.webp", thumb: "assets/trad-5-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth resting her hand on Chukwuemeka's shoulder as he smiles down at her, he in white with a red cap and coral beads" },
-    { src: "assets/gallery-bride-1.webp", thumb: "assets/gallery-bride-1-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth smiling at the camera on the beach at sunset, in a white pleated dress" },
-    { src: "assets/trad-9.webp", thumb: "assets/trad-9-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka sharing a smile, she holding a black feather fan, he in white with coral beads" },
+    { src: "assets/p-heart.webp", thumb: "assets/p-heart-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Pureheart and Chukwuemeka from behind, making a heart with their hands against a soft blue sky" },
+    { src: "assets/trad-7.webp", thumb: "assets/trad-7-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Chukwuemeka and Pureheart in a warm embrace in traditional attire, smiling at each other among green leaves" },
+    { src: "assets/trad-2.webp", thumb: "assets/trad-2-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart laughing with joy, in a burgundy off-shoulder dress with coral beads" },
+    { src: "assets/p-touch.webp", thumb: "assets/p-touch-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Chukwuemeka and Pureheart in white, foreheads close, her hand softly on his face" },
+    { src: "assets/trad-5.webp", thumb: "assets/trad-5-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart resting her hand on Chukwuemeka's shoulder as he smiles down at her, he in white with a red cap and coral beads" },
+    { src: "assets/gallery-bride-1.webp", thumb: "assets/gallery-bride-1-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Pureheart smiling at the camera on the beach at sunset, in a white pleated dress" },
+    { src: "assets/p-walk1.webp", thumb: "assets/p-walk1-sm.webp", tw: 600, th: 549, w: 1200, h: 1098, alt: "Pureheart and Chukwuemeka walking together in white on a bright day" },
+    { src: "assets/trad-9.webp", thumb: "assets/trad-9-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart and Chukwuemeka sharing a smile, she holding a black feather fan, he in white with coral beads" },
+    { src: "assets/p-embrace.webp", thumb: "assets/p-embrace-sm.webp", tw: 480, th: 720, w: 900, h: 1350, alt: "Chukwuemeka and Pureheart in a tender embrace" },
     { src: "assets/trad-4.webp", thumb: "assets/trad-4-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Chukwuemeka standing tall in white attire and a red cap, holding a gold-topped walking cane" },
-    { src: "assets/gallery-couple-2.webp", thumb: "assets/gallery-couple-2-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Elizabeth and Chukwuemeka holding hands, silhouetted against a lilac sky" },
-    { src: "assets/trad-1.webp", thumb: "assets/trad-1-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth glancing back over her shoulder in a black and gold embroidered gown and black head tie" },
-    { src: "assets/trad-3.webp", thumb: "assets/trad-3-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka close together, she in burgundy with coral beads and he in white with a red cap" },
-    { src: "assets/gallery-couple-1.webp", thumb: "assets/gallery-couple-1-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Elizabeth and Chukwuemeka laughing together at a phone on the beach at dusk" },
-    { src: "assets/trad-6.webp", thumb: "assets/trad-6-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth smiling warmly in a black and gold gown with a black feather fan and a black head tie" },
-    { src: "assets/trad-8.webp", thumb: "assets/trad-8-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Elizabeth and Chukwuemeka gazing at each other, her hand resting on his shoulder with her ring showing" },
-    { src: "assets/gallery-bride-2.webp", thumb: "assets/gallery-bride-2-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Elizabeth looking back over her shoulder at sunset, long waves of hair in the sea breeze" }
+    { src: "assets/gallery-couple-2.webp", thumb: "assets/gallery-couple-2-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Pureheart and Chukwuemeka holding hands, silhouetted against a lilac sky" },
+    { src: "assets/p-walk2.webp", thumb: "assets/p-walk2-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Pureheart and Chukwuemeka walking side by side, laughing" },
+    { src: "assets/trad-1.webp", thumb: "assets/trad-1-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart glancing back over her shoulder in a black and gold embroidered gown and black head tie" },
+    { src: "assets/trad-3.webp", thumb: "assets/trad-3-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart and Chukwuemeka close together, she in burgundy with coral beads and he in white with a red cap" },
+    { src: "assets/p-walk3.webp", thumb: "assets/p-walk3-sm.webp", tw: 480, th: 720, w: 900, h: 1350, alt: "Pureheart and Chukwuemeka walking hand in hand" },
+    { src: "assets/gallery-couple-1.webp", thumb: "assets/gallery-couple-1-sm.webp", tw: 640, th: 427, w: 1400, h: 933, alt: "Pureheart and Chukwuemeka laughing together at a phone on the beach at dusk" },
+    { src: "assets/trad-6.webp", thumb: "assets/trad-6-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart smiling warmly in a black and gold gown with a black feather fan and a black head tie" },
+    { src: "assets/p-piggy.webp", thumb: "assets/p-piggy-sm.webp", tw: 480, th: 714, w: 900, h: 1339, alt: "Chukwuemeka carrying Pureheart on his back, both smiling" },
+    { src: "assets/trad-8.webp", thumb: "assets/trad-8-sm.webp", tw: 480, th: 640, w: 756, h: 1008, alt: "Pureheart and Chukwuemeka gazing at each other, her hand resting on his shoulder with her ring showing" },
+    { src: "assets/gallery-bride-2.webp", thumb: "assets/gallery-bride-2-sm.webp", tw: 560, th: 840, w: 1000, h: 1500, alt: "Pureheart looking back over her shoulder at sunset, long waves of hair in the sea breeze" }
   ],
 
   toast: {
@@ -121,45 +128,61 @@ const CONFIG = {
       "As you walk hand-in-hand, may His word be a lamp to your feet and a light to your path.",
       "May He bless you with fruitfulness and keep you in His perfect peace.",
       "We raise a cup to your eternal union in Him.",
-      "To Elizabeth and Chukwuemeka, may God be your center always."
+      "To Pureheart and Chukwuemeka, may God be your center always."
     ]
   },
 
   rsvp: {
     // Paste your Google Apps Script "Web app" URL here (see README + google-apps-script.gs).
-    endpoint: "",
+    endpoint: "https://script.google.com/macros/s/AKfycbwdZa7V5sxmKcBKM5Ws37e6wrhkRS6QXw-wjt-ldOCQ3VnAZkiLM7nFS4u06XaeMJ-x/exec",
     phoneDisplay: "08165178188",
     tel: "08165178188",
-    whatsappNumber: "2348165178188",   // international format, no "+" and no spaces
+    whatsappNumber: "2348137679556",   // WhatsApp chat number (08137679556), international format, no "+"
     maxGuests: 6
   },
 
-  // ---- PLACEHOLDER BANK DETAILS: replace before sharing ----
   gifts: {
     heading: "With Love & Gratitude",
     message: "Your presence at our wedding is the greatest gift we could ask for. If you would like to bless us further, we would be truly grateful for a gift towards our new beginning.",
     accounts: [
-      { bank: "Your Bank Name", accountName: "Account Name", accountNumber: "0123456789" }
+      { bank: "Access Bank", accountName: "Chukwuemeka Michael", accountNumber: "0074689292" }
     ]
   },
 
-  contact: { name: "Our wedding coordinator", phone: "08165178188", whatsapp: "2348165178188" },
+  contact: { name: "Our wedding coordinator", phone: "08165178188", whatsapp: "08137679556" },
+
+  // ---- Father of the Day ----
+  fatherOfDay: { label: "Father of the Day", names: "Mr. & Mrs. Collins Ndubuisi Irodi", role: "CEO, Nicol Venture Ltd" },
+
+  // ---- Vendors ----
+  vendors: {
+    heading: "Our Vendors",
+    list: [
+      { role: "Event Planner", name: "Heartycakes And Events" },
+      { role: "Female Designer", name: "Twin Precious Apparel" },
+      { role: "Male Designer", name: "Canice Apparel" },
+      { role: "Decorator", name: "Ola Events" },
+      { role: "Cake & Dessert", name: "Heartycakes And Events" },
+      { role: "Make-up Artist", name: "Beautyluxe by Omoh" },
+      { role: "Videographers & Photographer", name: "G4exploitconsultltd" },
+      { role: "Website Developer", name: "G.O.C | BrandStrategist" }
+    ]
+  },
 
   // ---- FAQ (parking / accommodation are PLACEHOLDERS: confirm and edit) ----
   faq: [
     { q: "Dress code",       a: "We would love to see you in our colours of the day: white, burgundy, gold, lilac and onion.", swatches: true },
     { q: "Parking",          a: "Parking may be limited around the church and the reception hotel, so please plan to arrive early. Car-pooling or a ride-hailing service is encouraged." },
     { q: "Accommodation",    a: "Guests travelling from out of town are advised to book accommodation early. If you need help finding somewhere to stay near the venues in Surulere, please reach out to our contact person." },
-    { q: "Contact person",   a: "For any questions before or on the day, please call or WhatsApp {contact}.", contact: true }
+    { q: "Contact person",   a: "For any questions before or on the day, please call {contact}, or send a WhatsApp message to 08137679556.", contact: true }
   ],
 
   footer: {
-    thanks: "Thank you for being part of our story. Your love, prayers and presence mean the world to us. We cannot wait to celebrate with you!",
-    credit: "Photos: G4EXMEDIA Academy"
+    thanks: "Thank you for being part of our story. Your love, prayers and presence mean the world to us. We cannot wait to celebrate with you!"
   },
 
   share: {
-    message: "You are invited to the wedding of Elizabeth & Chukwuemeka (#PC2026), Sunday, 22nd November 2026, Surulere, Lagos."
+    message: "You are invited to the wedding of Pureheart & Chukwuemeka (#PC2026), Sunday, 22nd November 2026, Surulere, Lagos."
   },
 
   music: { src: "assets/music.mp3", volume: 0.45 }   // replace assets/music.mp3 with your own soft instrumental
@@ -272,6 +295,15 @@ const CONFIG = {
       it.photo ? el('figure', { class: 'tl-photo' }, [el('img', { src: it.photo.src, width: it.photo.w, height: it.photo.h, alt: it.photo.alt, loading: 'lazy', decoding: 'async' })]) : null
     ]);
     tl.appendChild(li);
+  });
+  var cl = $('#storyClosing'); if (cl && CONFIG.story.closing) cl.textContent = CONFIG.story.closing; else if (cl) cl.hidden = true;
+
+  /* ---------- father of the day + vendors ---------- */
+  var fo = CONFIG.fatherOfDay;
+  $('#fatherLabel').textContent = fo.label; $('#fatherNames').textContent = fo.names; $('#fatherRole').textContent = fo.role;
+  var vl = $('#vendorList');
+  CONFIG.vendors.list.forEach(function (v, i) {
+    vl.appendChild(el('li', { class: 'vendor reveal', style: '--d:' + ((i % 2) * 0.08) + 's' }, [el('span', { class: 'vendor__role', text: v.role }), el('span', { class: 'vendor__name', text: v.name })]));
   });
 
   /* ---------- gallery + lightbox ---------- */
@@ -469,7 +501,7 @@ const CONFIG = {
   $('#icsBtn').addEventListener('click', function () {
     var blob = new Blob([buildICS()], { type: 'text/calendar;charset=utf-8' });
     var url = URL.createObjectURL(blob);
-    var a = el('a', { href: url, download: 'Elizabeth-and-Chukwuemeka-wedding.ics' });
+    var a = el('a', { href: url, download: 'Pureheart-and-Chukwuemeka-wedding.ics' });
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
     toast('Calendar file ready');
@@ -548,7 +580,7 @@ const CONFIG = {
   /* WhatsApp links */
   function updateWa() {
     var who = fName.value.trim() || guest || '[your name]';
-    var msg = 'Hello! This is ' + who + '. I would like to RSVP for Elizabeth & Chukwuemeka\'s wedding (' + CONFIG.hashtag + ') on ' + ev.dateLabel + '.';
+    var msg = 'Hello! This is ' + who + '. I would like to RSVP for Pureheart & Chukwuemeka\'s wedding (' + CONFIG.hashtag + ') on ' + ev.dateLabel + '.';
     var a = attendVal();
     if (a === 'Yes') msg += ' I will be attending with ' + fGuests.value + ' guest' + (+fGuests.value === 1 ? '' : 's') + ' in total.';
     if (a === 'No') msg += ' Sadly, I will not be able to attend.';
@@ -678,7 +710,7 @@ const CONFIG = {
     var r = card.getBoundingClientRect(), ir = intro.getBoundingClientRect();
     card.style.cssText = 'position:fixed;left:' + r.left + 'px;top:' + r.top + 'px;width:' + r.width + 'px;height:' + r.height + 'px;margin:0;transform:none;transform-origin:0 0;z-index:20;box-shadow:0 20px 60px rgba(0,0,0,.45)';
     intro.appendChild(card);
-    var w = Math.min(ir.width, vh * 2 / 3), s = w / r.width;
+    var s = Math.min(ir.width * 0.94 / r.width, vh * 0.8 / r.height), w = r.width * s;
     var tx = ir.left + (ir.width - w) / 2 - r.left, ty = (vh - r.height * s) / 2 - r.top;
     anim(card, [{ transform: 'translate(0,0) scale(1)' }, { transform: 'translate(' + tx + 'px,' + ty + 'px) scale(' + s + ')' }], { duration: 1250, easing: 'cubic-bezier(.3,.7,.2,1)' });
     anim(stage, [{ transform: 'translateY(' + shiftPx + 'px)', opacity: 1 }, { transform: 'translateY(' + (vh * 1.25) + 'px)', opacity: 0.2 }], { duration: 1150, easing: 'cubic-bezier(.55,0,.8,.35)' });
@@ -753,7 +785,7 @@ const CONFIG = {
     var idle = window.requestIdleCallback || function (f) { return setTimeout(f, 600); };
     idle(function () {
       // warm the cache while the guest is looking at the envelope (thumbnails are lazy-loaded later)
-      ['assets/hero.webp', 'assets/invitation-card.webp'].forEach(function (u) { var i = new Image(); i.src = u; });
+      ['assets/hero.webp', 'assets/envelope-card.webp'].forEach(function (u) { var i = new Image(); i.src = u; });
     });
   });
 
