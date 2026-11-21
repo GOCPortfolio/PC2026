@@ -174,7 +174,8 @@ const CONFIG = {
     { q: "Dress code",       a: "We would love to see you in our colours of the day: white, burgundy, gold, lilac and onion.", swatches: true },
     { q: "Parking",          a: "Parking may be limited around the church and the reception hotel, so please plan to arrive early. Car-pooling or a ride-hailing service is encouraged." },
     { q: "Accommodation",    a: "Guests travelling from out of town are advised to book accommodation early. If you need help finding somewhere to stay near the venues in Surulere, please reach out to our contact person." },
-    { q: "Contact person",   a: "For any questions before or on the day, please call {contact}, or send a WhatsApp message to 08137679556.", contact: true }
+    { q: "Contact person",   a: "For any questions before or on the day, please call {contact}, or send a WhatsApp message to 08137679556.", contact: true },
+    { q: "Who created this beautiful wedding website?", a: "This website was proudly designed by G.O.C | Brand Strategist × AI, where we create beautiful, personalized digital wedding experiences.", credit: { text: "Planning your wedding? Let's create yours too!", linkText: "Chat with us on WhatsApp", href: "https://wa.me/2348027134537" } }
   ],
 
   footer: {
@@ -425,6 +426,12 @@ const CONFIG = {
       a.appendChild(el('a', { href: 'tel:' + c.phone, text: c.name + ' (' + c.phone + ')' }));
       a.appendChild(document.createTextNode(parts[1] || ''));
     } else a.appendChild(document.createTextNode(f.a));
+    if (f.credit) {
+      var cp = el('p', { class: 'faq-credit' });
+      cp.appendChild(document.createTextNode(f.credit.text + ' '));
+      cp.appendChild(el('a', { href: f.credit.href, target: '_blank', rel: 'noopener', text: f.credit.linkText }));
+      a.appendChild(cp);
+    }
     if (f.swatches) {
       var row = el('div', { class: 'faq-sw', 'aria-hidden': 'true' });
       CONFIG.colours.forEach(function (c) { row.appendChild(swatchEl(c)); });
@@ -681,6 +688,29 @@ const CONFIG = {
     var a = elm.animate(kf, Object.assign({ fill: 'forwards' }, opt));
     anims.push(a); return a;
   }
+  function initHeroSlider() {
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.hero__slide'));
+    if (slides.length < 2) return;
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cur = 0, HOLD = 5500;
+    // load the extra photos only now, so the first paint stays light
+    slides.forEach(function (el) {
+      var u = el.getAttribute('data-src');
+      if (u) { el.src = u; el.removeAttribute('data-src'); }
+    });
+    function go() {
+      var next = (cur + 1) % slides.length, nEl = slides[next];
+      var show = function () {
+        var old = slides[cur];
+        old.classList.remove('is-active'); old.classList.add('is-leaving');
+        nEl.classList.remove('is-leaving'); nEl.classList.add('is-active');
+        setTimeout(function () { old.classList.remove('is-leaving'); }, 2000);
+        cur = next;
+      };
+      if (nEl.complete) show(); else nEl.addEventListener('load', show, { once: true });
+    }
+    if (!reduce) setInterval(function () { if (!document.hidden) go(); }, HOLD);
+  }
   function finishIntro() {
     if (finished) return; finished = true;
     timers.forEach(clearTimeout);
@@ -690,6 +720,7 @@ const CONFIG = {
     window.scrollTo(0, 0);
     document.documentElement.classList.add('page-ready');
     startReveals();
+    initHeroSlider();
     $('#main').focus({ preventScroll: true });
   }
   function fadeOutIntro(ms) {
